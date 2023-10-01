@@ -1,0 +1,179 @@
+* {
+    margin: auto;
+
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+/* Nav Bar */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 69px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.nav-btn {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.nav-btn a{
+    color: seashell;
+    margin: 0 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-btn a:hover {
+    opacity: 0.9;
+}
+
+/* Mission section */
+.mission-container {
+    display: flex;
+    align-items: center;
+    background-image: url(/img/img-mission-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 70px;
+    height: 700px;
+    width: 1200px;
+    margin: auto;
+}
+
+.mission-text {
+    background-color: black;
+    text-align: center;
+    width: 1200px;
+    padding: 10px;
+}
+
+/* Featured section */
+.featured-container {
+    width: 1000px;
+    position: relative;
+    margin: 150px auto 90px auto;
+}
+
+.featured-title {
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.featured-title h2 {
+    padding-bottom: 25px ;
+}
+
+.featured-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: block;
+}
+
+.box img {
+    height: 200px;
+    width: 300px;
+    flex-basis: auto;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+
+/* Location section */
+.locations-container {
+    background-image: url(/img/img-locations-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    width: 1200px;
+    margin: auto;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.loc-title {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Queries*/
+@media screen and (max-width: 700px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header {
+        height: auto;
+    }
+}

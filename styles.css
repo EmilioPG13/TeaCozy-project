@@ -34,16 +34,18 @@ header {
 .nav-btn {
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-end;
     list-style: none;
-    text-decoration: underline;
-    margin-right: 10px;
+    margin: 0;
 }
 
 .nav-btn a{
     color: seashell;
     margin: 0 40px;
+    text-decoration: underline;
     cursor: pointer;
     margin-right: 10px;
+    display: block;
 }
 
 .nav-btn a:hover {
@@ -59,7 +61,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    top: 70px;
+    top: 44px;
     height: 700px;
     width: 1200px;
     margin: auto;
@@ -76,7 +78,7 @@ header {
 .featured-container {
     width: 1000px;
     position: relative;
-    margin: 150px auto 90px auto;
+    margin: 80px auto 90px auto;
 }
 
 .featured-title {
@@ -105,6 +107,7 @@ header {
     flex-basis: auto;
     margin: 10px;
     padding-bottom: 10px;
+    opacity: 1;
 }
 
 figcaption {
@@ -137,28 +140,43 @@ figcaption {
     width: 100%;
 }
 
+.loc-box {
+    background-color: black;
+    width: 300px;
+    height: 250px;
+    margin: 30px 40px;
+    opacity: 1;
+}
 
+.loc-box h3 {
+    margin-top: 30px;
+}
 
+.loc-box p {
+    margin-top: 25px;
+    font-weight: 400;
+}
 
+/* Footer Section */
+.contact {
+    text-align: center;
+    height: 200px;
+    width: auto;
+    margin: 30px;
+}
 
+.contact h2 {
+    margin-top: 10px;
+}
 
+.contact h5 {
+    margin: 35px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.left {
+    margin: 20px;
+    float: left;
+}
 
 
 /* Queries*/
@@ -176,4 +194,15 @@ figcaption {
     header {
         height: auto;
     }
+}
+
+@media screen and (max-width: 1200px){
+    .mission-container {
+        width: auto;
+    }
+
+    .mission-container h2, h4{
+        width: auto;
+    }
+    
 }
